@@ -121,6 +121,7 @@ nav {
 
 .hero-intro-section p {
   padding: 5rem 10rem;
+  color: var(--grayText);
 }
 
 .hero-intro-section h2 {
@@ -193,7 +194,60 @@ nav {
   display: none;
 }
 
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  color: white;
+  background: var(--gray);
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+
+.about-text div {
+  padding: 3rem 8rem;
+}
+
+.about-text h3 {
+  padding: 2rem 0rem;
+  font-family: "Ruhl medium";
+}
+
+.about-text h2 {
+  font-family: "Vibes";
+  padding: 4rem;
+}
+
+.about-image {
+  flex: 1 1 40rem;
+  position: relative;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-image h5 {
+  flex: 1 1 40rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  letter-spacing: 40px;
+}
+
 @media screen and (max-width: 842px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hero-intro-section {
+    padding: 5rem 3rem;
+  }
   .burger {
     position: relative;
     display: block;
@@ -253,5 +307,9 @@ nav {
   .menu-check:checked ~ .burger span:nth-child(3) {
     background: white;
     opacity: 0;
+  }
+
+  .about-text div {
+    padding: 3rem 3rem;
   }
 }
